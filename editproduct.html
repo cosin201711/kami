@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	     <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+	    <title>CD情報の編集ページ</title>
+	    <link rel="stylesheet" href="bootstrap.min.css">
+	</head>
+
+
+<body>
+
+
+	<div class="container">
+			<h2>CD情報の編集</h2>
+	  <div class="row">
+			<div class="col-sm-12 col-md-3">
+					<!-- CDのジャケット画像の編集部分 -->
+						<img src="sample.png" alt="ジャケット画像" style="width :200px; height :200px"　class="mx-auto">
+						<input type="button" value="ファイル選択" onClick="$('#file').click();">
+						<button type="submit" class="btn btn-lg btn-block btn-info">ジャケット画像更新</button>
+			</div>
+
+			<div class="col-sm-12 col-md-9">
+				<form action="#" method="post">
+
+						<!-- CDの情報 valueの中には編集するCDの情報を表示します-->
+						<label>シングル/アルバム名：</label><br>
+							<input type="text" class="form-control" value="日本の四季">
+						<label>アーティスト：</label><br>
+							<input type="text" class="form-control" placeholder="CDのアーティスト名を入力してください" value="JJ">
+						<lanel>レーベル：</lanel><br>
+							<input type="text" class="form-control" value="J-record">
+						<label>ジャンル：</label><br>
+							<select class="form-control" id="sel1">
+						        <option>ミュージック</option>
+						        <option>ロック</option>
+						        <option>POP</option>
+						        <option>ジャズ・フュージョン</option>
+						        <option>アニメ・ゲーム</option>
+						        <option>クラシック</option>
+						        <option>ソウル・R&B</option>
+						    </select>
+
+	<br>
+
+
+						<!-- 曲目リスト disc/track/各trackのアーティストの編集 -->
+
+							<div class="container">
+							  <h3>収録曲リスト</h3>
+							  <table class="table table-striped">
+							    <thead>
+							      <tr>
+							        <th>Disc No.</th>
+							        <th>track</th>
+							        <th>Artist</th>
+							      </tr>
+							    </thead>
+							    <tbody>
+							      <tr>
+							        <td><input type="text" class="form-control" value="春"></td>
+							        <td><input type="text" class="form-control" value="あけぼの"></td>
+							        <td><input type="text" class="form-control" value="JJ"></td>
+							      </tr>
+							      <tr>
+							        <td><input type="text" class="form-control" value="夏"></td>
+							        <td><input type="text" class="form-control" value="よる"></td>
+							        <td><input type="text" class="form-control" value="JJ"></td>
+							      </tr>
+							      <tr>
+							        <td><input type="text" class="form-control" value="夏"></td>
+							        <td><input type="text" class="form-control" value="月のころはさらなり"></td>
+							        <td><input type="text" class="form-control" value="JJ feat.SAM"></td>
+							      </tr>
+							    </tbody>
+							  </table>
+							</div>
+	<br>
+
+						<button type="submit" class="btn btn-lg btn-block btn-info">更新</button><br>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
