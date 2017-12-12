@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "ja" >
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Adminster_top</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-md-offset-5">
+					<h2>管理者ページ</h2>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+			<hr>
+
+			<div class="row">
+
+				<!-- SideBar -->
+				<div class="col-md-2">
+					<div>Adminster_Name</div>
+					<hr>
+					<div><a href="Adminster_products_index.html">商品一覧</a></div>
+					<div><a href="Adminster_new_products.html">新しい商品の作成</a></div>
+					<hr>
+					<div><a href="user_index.html">ユーザ一覧</a></div>
+					<hr>
+					<div><a href="Adminster_top.html">ホーム</a></div>
+				</div>
+
+				<!-- Content -->
+				<div class="col-md-10" >
+					<h3 class="col-md-8 col-md-offset-4">ユーザー一覧</h3>
+					<input type="text" name="search" class="col-md-12" placeholder="Search..">
+					<table class="table table-hover">
+						<thead>
+							<th>苗字</th>
+							<th>名前</th>
+							<th>苗字(カナ)</th>
+							<th>名前(カナ)</th>
+							<th>郵便番号</th>
+							<th>住所</th>
+							<th>メールアドレス</th>
+							<th></th>
+							<th></th>
+							<th></th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>李</td>
+								<td>虹儀</td>
+								<td>リ</td>
+								<td>ホンイ</td>
+								<td>１３０００１３</td>
+								<td>墨田区錦糸町</td>
+								<td>123@123.com</td>
+								<th>詳細</th>
+								<th>編集</th>
+								<th>削除</th>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<script src="bootstrap.min.js"></script>
+</body>
+</html>	
