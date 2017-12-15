@@ -45,87 +45,75 @@
 <div class="container-fluid">
 
 	<div class="row">
-		<div class="col-xs-2"></div>
-		<div class="col-xs-8">
+		<div class="col-xs-offset-2 col-xs-8 panel panel-default">
 			<h2> 会員情報</h2>
 			<div>
-				<table class="table border="3" rules="none" frame="box">
+				<table class="table table-hover">
 					<thead>
-						<tr class="info">
-							<td width="20%">
-								お名前:<br>
+						<tbody>
+						<tr>
+							<th>お名前</th>
+							<td>
 								佐藤 鈴愛
 							</td>
-							<td width="20%">
-								ふりがな:<br>
-								サトウ レイア
+						</tr>
+						<tr>
+							<th>ふりがな</th>
+							<td>
+							    サトウ レイア
 							</td>
-							<td colspan="2" width="60%">
-								ご住所:<br>
-								〒000-0000　
+						</tr>
+						    <th>ご住所</th>
+							<td>
+								〒000-0000
 								神奈川県701号室
 							</td>
 						</tr>
-					</thead>
-					<tbody>
 						<tr>
+							<th>電話番号</th>
 							<td>
-								電話番号:<br>
 								09099993333
 							</td>
+						</tr>
+						<tr>
+							<th>メールアドレス</th>
 							<td>
-								メールアドレス:<br>
 								abd@mail.com
 							</td>
-							<td colspan="2">
-								パスワード:<br>
+						</tr>
+						<tr>
+							<th>パスワード</th>
+							<td>
 								＊＊＊＊＊＊＊
 							</td>
 						</tr>
 					</tbody>
+					</thead>
 				</table>
 			</div>
 		</div>
-		</div>
-		<div class="row">
-		<div class="col-xs-8"></div>
-		<div class="col-xs-4">
-			<a href="user_edit.html" type="button" class="btn btn-default" aria-label="Left Align"><span class="glyphicon glyphicon-cog" aria-hidden="true""></span> 登録内容の編集</a>
-		</div>
-		<!-- <div class="col-xs-2"></div> -->
-		</div>
-
-
-
+			<div class="col-xs-offset-2 col-xs-8">
+				<div class="pull-right">
+				   <a href="user_edit.html" type="button" class="btn btn-default" aria-label="Left Align"><span class="glyphicon glyphicon-cog" aria-hidden="true""></span> 登録内容の編集</a>
+				</div>
+		    </div>
+    </div>
 
 	<div class="row">
-		<div class="col-xs-2"></div>
-		<div class="col-xs-8">
+		<div class="col-xs-offset-2 col-xs-8 panel panel-default">
 			<h2> 購入履歴</h2>
 			<div>
-				<table class="table border="3" rules="none" frame="box">
-					<thead>
-						<tr class="info">
-							<td width="20%">
-								購入日<br>
-								2017/12/1
-							</td>
-							<td>
-								購入価格総計<br>
-								¥ 2,000-
-							</td>
-							<td>
-								送付先<br>
-								登録住所 〒000-0000 
-								神奈川県701号室
-							</td>
-							<td>
-								ステータス<br>
-								配達済み
-							</td>
-						</tr>
-					</thead>
-					<tbody>
+				<div class="col-xs-4">
+					<h4>購入日</h4>
+					<p>2017/12/1</p>
+					<h4>送付先</h4>
+					<p>〒000-0000 神奈川県701号室</p>
+					<h4>ステータス</h4>
+					<p>配達済み</p>
+				</div>
+				<div class="col-xs-7">
+				　　<table class="table">
+					　　<thead>
 						<tr>
 							<td>
 								<div class="img"></div>
@@ -147,13 +135,18 @@
 								小計 ¥ 1,000-
 							</td>
 						</tr>
-					</tbody>
-				</table>
+					    </thead>
+				    </table>
+				</div>
+				<div class="col-md-12">
+					<p class="text-right"><span style="font-size: 20px;">合計　￥2,000-</span></p>
+				</div>
 			</div>
 		</div>
-		<div class="col-xs-2"></div>
 	</div>
 </div>
+
+
 </div><br><br>
 </body>
 		<footer class="container-fluid text-center">
