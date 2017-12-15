@@ -42,12 +42,12 @@
 </nav>
 </header>
 
+<div class="container">
+	<h2>カート</h2>
 	<div class="row">
-		<div class="col-xs-2"></div>
 		<div class="col-xs-8">
-			<h2> Shopping Cart</h2>
 			<div>
-				<table class="table border="3" rules="none" frame="box">
+				<table class="table bordered" frame="box">
 					<thead>
 						<tr class="info">
 							<th colspan="2">
@@ -110,23 +110,59 @@
 						</tr>
 					</tbody>
 				</table>
-			</div>
-			<div class="col-xs-8"></div>
-			<div class="col-xs-2">
-				<h4><strong> 合計: ¥ 3,000-</strong></h4>
-			</div>
-			<div class="col-xs-2">
-				<button class="btn btn-success"> レジへ進む</button>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-4"></div>
-			<div class="col-xs-4">
 				<a href="user_top.html" type="button" class="btn btn-warning btn-block"> ショッピングを続ける</a>
 			</div>
-			<div class="col-xs-4"></div>
+		</div>
+			<div class="row">
+				<div class="col-xs-4">
+					<div class="panel panel-info">
+					    <div class="panel-heading"><span style="font-weight:bold;">小計 ２点：<span style="color:#ff0000;font-size: 20px;"> ３,０００円</span></span></div>
+					    <div class="panel-body"><button class="btn btn-primary btn-block"> レジへ進む</button></div>
+				    </div>
+				</div>
+			</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<h2>発送先住所</h2>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="uketori_myouji">受取人名 苗字</label>
+							<input type="text" class="form-control" id="uketori_myouji" placeholder="苗字"/>
+							<input type="text" class="form-control" id="uketori_myouji" placeholder="苗字(カナ)"/>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="uketori_myouji">受取人名 名前</label>
+							<input type="text" class="form-control" id="uketori_myouji" placeholder="名前"/>
+							<input type="text" class="form-control" id="uketori_myouji" placeholder="名前(カナ)"/>
+					</div>
+				</div>
+	            <div class="col-md-12">
+	            	<div class="form-group">
+	            		<label for="yubinnbanngou">郵便番号</label>
+	            		   <input type="text" class="form-control" placeholder="郵便番号" id="yubinnbanngou" />
+	            	</div>
+	            	<div class="form-group">
+	            		<label for="jyuusyo">発送先住所</label>
+	            		   <input type="text" class="form-control" placeholder="発送先住所" id="jyuusyo" />
+	            	</div>
+	            	<div class="form-group">
+	            		<label for="banngou">電話番号</label>
+	            		   <input type="text" class="form-control" placeholder="電話番号" id="banngou" />
+	            	</div>
+
+
+	            </div>
 		</div>
 	</div>
+</div>
+
+
 </div>
 </div><br><br>
 </body>
